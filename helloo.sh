@@ -1,3 +1,2 @@
 #!/bin/bash
-
-echo "Hello joahubi"
+echo "Hello joahubi!"
