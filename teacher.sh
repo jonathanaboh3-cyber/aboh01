@@ -1,10 +1,6 @@
 #!/bin/bash
 
-KEY_INTERVIEW=$(grep -o '[0-9]\+' path/to/the/file/that/reveals/the/key_interview)
-export KEY_INTERVIEW
-
-echo "$KEY_INTERVIEW"
-
-cat path/to/the/file/that/reveals/the/key_interview
-
+INTERVIEW_NUM=$(find . -path "**/interviews/interview_*" -type f | grep -oE '[0-9]+')
+echo "$INTERVIEW_NUM"
+cat "$(find . -path "**/interviews/interview_$INTERVIEW_NUM" -type f)"
 echo "$MAIN_SUSPECT"
