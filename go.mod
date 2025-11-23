@@ -1,5 +1,3 @@
-module piscine
+module piscine-go
 
 go 1.22.2
-
-require github.com/01-edu/z01 v0.2.0
