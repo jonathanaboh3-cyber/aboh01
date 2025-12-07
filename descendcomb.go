@@ -21,4 +21,3 @@ func DescendComb() {
 func printNumber(n int) {
 	z01.PrintRune(rune(n/10 + '0'))
 	z01.PrintRune(rune(n%10 + '0'))
-}
