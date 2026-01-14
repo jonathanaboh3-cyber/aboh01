@@ -1,4 +1,4 @@
-package piscine
+package main
 
 func Unmatch(a []int) int {
 	count := make(map[int]int)
